@@ -11,9 +11,9 @@ function App() {
 
 
   const { TextAnalyticsClient, AzureKeyCredential } = require("@azure/ai-text-analytics");
-  // Key and endpoint can no longer be used. They remain as an example.
-  const key = 'bf22f3410ccc4162a47cb007d42fb9e0';
-  const endpoint = 'https://zenbomedication.cognitiveservices.azure.com/';
+  // Key and endpoint can be found after creating a Language Resource in Azure 
+  const key = 'ENTER KEY HERE';
+  const endpoint = 'ENTER ENDPOINT HERE';
   // Authenticate the client with your key and endpoint
   const textAnalyticsClient = new TextAnalyticsClient(endpoint, new AzureKeyCredential(key));
 
